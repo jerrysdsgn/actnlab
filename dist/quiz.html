@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ACTNlab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="icon" type="image/png" href="img/Favicon.png"/>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  </head>
+<body onLoad="populate()">
+    <div class="wrapper-m">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="index.html">
+                <img src="img/MainLogo.svg">
+              </a>
+          
+              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+    
+              </div>
+          
+              <div class="navbar-end">
+               <span class="navbar-item" id="homeLink"></span>
+               <span class="navbar-item" id="reviewsLink"></span>
+               <span class="navbar-item" id="abooutLink"></span>
+               <span class="navbar-item" id="buildLink"></span>
+               <span class="navbar-item" id="quizLink"></span>
+              </div>
+            </div>
+          </nav>
+
+
+    <div class="container">
+        <div class="columns is-vcentered" style="margin: 0;">
+            <div class="column is-6">
+                <div class="page-header">
+                    <h2 class="subtitle is-4 uppercase">the best solution for you</h2>
+                    <h1 class="title is-1">Web Builder Quiz</h1>
+                    <h6 class="subtitle is-6">Disclaimer: This quiz doesn't consider Ecommercesite builders</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    
+    <form name="personalityForm"> 
+
+    <div class="container quiz-body">
+        <div class="columns is-vcentered" style="margin: 0;">
+            <div class="column">
+                <div class="quiz-box quiz-1">  
+                    <h2 class="quiz-question">1. What is the purpose of your website?</h2>
+                    <span class="quiz-answer"> 
+                    <label><input type="radio" name="q1" onClick="saver(1,3)"> Promoting a product/service</label>
+                    <label><input type="radio" name="q1" onClick="saver(1,3)"> Building website for my business</label>
+                    <label><input type="radio" name="q1" onClick="saver(1,3)"> I want to showcase my work/portfolio</label>
+                    <label><input type="radio" name="q1" onClick="saver(1,1)"> Create content</label>
+                    </span>  
+                </div>
+                <br />  
+                <h6 id="radio1Validator" class="help is-danger subtitle is-6"></h6>
+            </div>
+            <div class="column">
+                <figure class="image image is-3by2">
+                    <img src="img/q1.svg">
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="container quiz-body">
+        <div class="columns is-vcentered" style="margin: 0;">
+            <div class="column">
+                <div class="quiz-box quiz-2">  
+                    <h2 class="quiz-question">2. What best describes your main priority:</h2> 
+                    <span class="quiz-answer"> 
+                    <label><input type="radio" name="q2" onClick="saver(2,4)"> ”Looking to build a high quality experience”</label>
+                    <label><input type="radio" name="q2" onClick="saver(2,3)"> ”Looking for a solution to launch as soon as possible”</label>
+                    <label><input type="radio" name="q2" onClick="saver(2,1)"> ”Looking to build a website that I can scale overtime”</label>
+                    </span>  
+                </div> 
+                <br />  
+                <h6 id="radio2Validator" class="help is-danger subtitle is-6"></h6>
+            </div>
+            <div class="column">
+                <figure class="image image is-3by2">
+                    <img src="img/q2.svg">
+                </figure>
+            </div>
+        </div>
+    </div>
+
+        <div class="container quiz-body">
+            <div class="columns is-vcentered" style="margin: 0;">
+                <div class="column">
+                    <div class="quiz-box quiz-3">   
+                        <h2 class="quiz-question">3. Your opinion on the learning curve:</h2> 
+                        <span class="quiz-answer"> 
+                        <label><input type="radio" name="q3" onClick="saver(3,4)"> ”It doesn't matter if it is complex as long as I create an amazing website”</label> 
+                        <label><input type="radio" name="q3" onClick="saver(3,1)"> ”Looking for aa intuitive and tool that I can figure out as I advance”</label> 
+                        <label><input type="radio" name="q3" onClick="saver(3,3)"> ”Willing to give it an hour or two, not much more than that”</label> 
+                        </span>  
+                    </div>
+                    <br />  
+                    <h6 id="radio3Validator" class="help is-danger subtitle is-6"></h6>
+                </div>
+                <div class="column">
+                    <figure class="image image is-3by2">
+                        <img src="img/q3.svg">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="container quiz-body">
+            <div class="columns is-vcentered" style="margin: 0;">
+                <div class="column">
+                    <div class="quiz-box quiz-4">    
+                        <h2 class="quiz-question">4. Ideal budget?</h2> 
+                        <span class="quiz-answer"> 
+                        <label><input type="radio" name="q4" onClick="saver(4,3)"> $8 - $12/mo.</label> 
+                        <label><input type="radio" name="q4" onClick="saver(4,1)"> less than $8/mo.</label> 
+                        <label><input type="radio" name="q4" onClick="saver(4,4)"> $13 - $15/mo.</label> 
+                        </span>  
+                    </div> 
+                    <br />  
+                    <h6 id="radio4Validator" class="help is-danger subtitle is-6"></h6>
+                </div>
+                <div class="column">
+                    <figure class="image image is-3by2">
+                        <img src="img/q4.svg">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="container quiz-body">
+            <div class="columns is-vcentered" style="margin: 0;">
+                <div class="column">
+                    <div class="quiz-box quiz-5">    
+                        <h2 class="quiz-question">5. How much are you looking to upgrade your site?</h2>
+                        <span class="quiz-answer"> 
+                        <label><input type="radio" name="q5" onClick="saver(5,3)"> The site will be temporary</label> 
+                        <label><input type="radio" name="q5" onClick="saver(5,1)"> It will stay as it is for a long time (static)</label> 
+                        <label><input type="radio" name="q5" onClick="saver(5,4)"> It will change as the business grow</label> 
+                        </span>  
+                    </div>
+                    <br />  
+                    <h6 id="radio5Validator" class="help is-danger subtitle is-6"></h6>
+                </div>
+                <div class="column">
+                    <figure class="image image is-3by2">
+                        <img src="img/q5.svg">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="container quiz-body">
+            <div class="columns is-vcentered" style="margin: 0;">
+                <div class="column">
+                    <div class="quiz-box quiz-5">    
+                        <h2 class="quiz-question">6. Your take on customization:</h2>
+                        <span class="quiz-answer"> 
+                        <label><input type="radio" name="q5" onClick="saver(5,4)"> I want to have 100% customization control over my website</label> 
+                        <label><input type="radio" name="q5" onClick="saver(5,3)"> Im fine setting up some pre made containers</label> 
+                        <label><input type="radio" name="q5" onClick="saver(5,1)"> I fine tweaking the details of a template</label> 
+                        </span>  
+                    </div>
+                    <br />  
+                    <h6 id="radio5Validator" class="help is-danger subtitle is-6"></h6>
+                </div>
+                <div class="column">
+                    <figure class="image image is-3by2">
+                        <img src="img/q5.svg">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!----
+
+
+
+        <div class="container quiz-body">
+            <div class="columns is-vcentered" style="margin: 0;">
+                <div class="column">
+                    <div class="quiz-box quiz-6">    
+                        <h2 class="quiz-question">6. Does your skin tan?</h2>
+                        <span class="quiz-answer">
+                        <label><input type="radio" name="q6" onClick="saver(6,0)"> Never - I always burn</label> 
+                        <label><input type="radio" name="q6" onClick="saver(6,1)"> Seldom</label> 
+                        <label><input type="radio" name="q6" onClick="saver(6,2)"> Sometimes</label> 
+                        <label><input type="radio" name="q6" onClick="saver(6,3)"> Often</label> 
+                        <label><input type="radio" name="q6" onClick="saver(6,4)"> Always</label> 
+                        </span>  
+                    </div> 
+                    <br />  
+                    <h6 id="radio6Validator" class="help is-danger subtitle is-6"></h6>
+                </div>
+                <div class="column">
+                    <figure class="image image is-3by2">
+                        <img src="https://picsum.photos/800/600/?random">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="container quiz-body">
+            <div class="columns is-vcentered" style="margin: 0;">
+                <div class="column">
+                    <div class="quiz-box quiz-7">   
+                        <h2 class="quiz-question">7. How deeply do you tan?</h2> 
+                        <span class="quiz-answer"> 
+                        <label><input type="radio" name="q7" onClick="saver(7,0)"> Not at all or very little</label> 
+                        <label><input type="radio" name="q7" onClick="saver(7,1)"> Lightly</label> 
+                        <label><input type="radio" name="q7" onClick="saver(7,2)"> Moderately</label> 
+                        <label><input type="radio" name="q7" onClick="saver(7,3)"> Deeply</label> 
+                        <label><input type="radio" name="q7" onClick="saver(7,4)"> My skin is naturally dark</label> 
+                        </span>  
+                    </div>
+                    <br />  
+                    <h6 id="radio7Validator" class="help is-danger subtitle is-6"></h6>
+                </div>
+                <div class="column">
+                    <figure class="image image is-3by2">
+                        <img src="https://picsum.photos/800/600/?random">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="container quiz-body">
+            <div class="columns is-vcentered" style="margin: 0;">
+                <div class="column">
+                    <div class="quiz-box quiz-8">  
+                        <h2 class="quiz-question">8. How sensitive is your face to the sun?</h2> 
+                        <span class="quiz-answer"> 
+                        <label><input type="radio" name="q8" onClick="saver(8,0)"> Very sensitive</label> 
+                        <label><input type="radio" name="q8" onClick="saver(8,1)"> Sensitive</label> 
+                        <label><input type="radio" name="q8" onClick="saver(8,2)"> Normal</label> 
+                        <label><input type="radio" name="q8" onClick="saver(8,3)"> Resistant</label> 
+                        <label><input type="radio" name="q8" onClick="saver(8,4)"> Very resistant/Never had a problem</label>
+                        </span>  
+                    </div>
+                    <br />  
+                    <h6 id="radio8Validator" class="help is-danger subtitle is-6"></h6>
+                </div>
+                <div class="column">
+                    <figure class="image image is-3by2">
+                        <img src="https://picsum.photos/800/600/?random">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="container quiz-body">
+            <div class="columns is-vcentered" style="margin: 0;">
+                <div class="column">
+                    <div class="quiz-box quiz-9">    
+                        <h2 class="quiz-question">9. How often do you tan?</h2> 
+                        <span class="quiz-answer"> 
+                        <label><input type="radio" name="q9" onClick="saver(9,0)"> Never</label> 
+                        <label><input type="radio" name="q9" onClick="saver(9,1)"> Seldom</label> 
+                        <label><input type="radio" name="q9" onClick="saver(9,2)"> Sometimes</label> 
+                        <label><input type="radio" name="q9" onClick="saver(9,3)"> Often</label>
+                        <label><input type="radio" name="q9" onClick="saver(9,4)"> Always</label> 
+                        </span>  
+                    </div> 
+                    <br />  
+                    <h6 id="radio9Validator" class="help is-danger subtitle is-6"></h6>
+                </div>
+                <div class="column">
+                    <figure class="image image is-3by2">
+                        <img src="https://picsum.photos/800/600/?random">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="container quiz-body">
+            <div class="columns is-vcentered" style="margin: 0;">
+                <div class="column">
+                    <div class="quiz-box quiz-10">    
+                        <h2 class="quiz-question">10. When was your last tan?</h2> 
+                        <span class="quiz-answer"> 
+                        <label><input type="radio" name="q10" onClick="saver(10,0)"> +3 months ago</label> 
+                        <label><input type="radio" name="q10" onClick="saver(10,1)"> 2-3 months ago</label> 
+                        <label><input type="radio" name="q10" onClick="saver(10,2)"> 1-2 months ago</label> 
+                        <label><input type="radio" name="q10" onClick="saver(10,3)"> Weeks ago</label>
+                        <label><input type="radio" name="q10" onClick="saver(10,4)"> Days</label> 
+                        </span>  
+                    </div> 
+                    <br />  
+                    <h6 id="radio10Validator" class="help is-danger subtitle is-6"></h6>
+                </div>
+                <div class="column">
+                    <figure class="image image is-3by2">
+                        <img src="https://picsum.photos/800/600/?random">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    -->
+    </form>
+
+            <div class="wrapper container">  
+                         
+            <hr>  
+
+            <div class="has-text-centered">
+                <input id="submitBtn" class="button is-link is-light is-medium blue-shadow" type="button" name="result" value="Submit" onClick="total()">
+            </div>
+            
+            <hr>   
+            
+            <div id="modal" class="modal">
+                <div class="modal-background"></div>
+                <div class="columns is-vcentered hero hero-body has-text-centered">
+                    <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Atención</p>
+                        <button id="closeBox" class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <div id="result"></div>
+                        <figure class="image is-3by1">
+                            <img src="https://bulma.io/images/placeholders/256x256.png">
+                        </figure>
+                        <br />
+                        <p id="resultDesc"></p>
+                    </section>
+                    <footer class="modal-card-foot" style="display: block;">
+                        <a id="webBuilderLink" href="#"><button class="button is-success"></button></a>
+                        <a id="VideoLink" href=""><button id="videoBtn" class="button is-success"></button></a> 
+                    </footer>
+                    </div>
+                </div>
+            </div>
+                
+            
+            </div><!-- /.container -->    
+        </form> 
+    </div>
+
+    </div>
+
+
+    <!--AREA DE FOOTER-->
+    <footer class="footer">
+        <div class="container has-text-centered alinging-center">
+            <div class="small-spacer"></div>
+        </div>
+        <div class="container">
+            <div class="columns">
+              <div class="column is-1"></div>
+                <div id="footerCol1" class="column">
+                </div>
+                <div id="footerCol2" class="column">
+                </div>
+                <div id="footerCol3" class="column">
+                </div>
+                <div id="footerCol4" class="column">
+                </div>
+               <div class="column is-1"></div>
+            </div>
+            <div id="footerSmLinks" class="content has-text-centered">
+            </div>
+        </div>
+      </footer>
+
+  <script>
+      document.getElementById("closeBox").addEventListener('click', function(){
+          document.getElementById("modal").style.display = "none";
+      })
+  </script>
+
+  <script src="js/quiz.js"></script>
+  <script src="js/navitems.js"></script>
+</body>
+</html>
