@@ -1,0 +1,287 @@
+body{
+    background-color: #fafafa;
+}
+
+.wrapper-m{
+    max-width: 80% !important; 
+    margin-left: 10% !important;
+}
+
+.wrapper-videos{
+    max-width: 90% !important; 
+    margin-left: 5% !important;
+}
+
+.logo-image{
+
+}
+
+/*HELPERS*/
+
+.spacer{
+    margin-bottom: 100px;
+}
+
+.small-spacer{
+    margin-bottom: 60px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+/*STYLES*/
+
+.img-subtitle{
+    font-size: 0.85em;
+}
+
+.navbar{
+    background-color: #fafafa;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+.small-subtitle{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.review-icons.column{
+    text-align: center;
+}
+
+.review-icons figure{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.use-case-icon{
+    margin-bottom: 15px;
+}
+
+.pricing-table.column{
+    text-align: center;
+}
+
+.price-box:hover{
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 15px 21px -6px rgba(0,0,0,0.23);
+    -moz-box-shadow: -1px 15px 21px -6px rgba(0,0,0,0.23);
+    box-shadow: -1px 15px 21px -6px rgba(0,0,0,0.23);
+    cursor: pointer;
+}
+
+.pricing-table figure{
+    display: inline-block;;
+}
+
+.pricing-table header{
+    padding: 15px 10px;
+    margin-bottom: 10px;
+}
+
+.content p{
+    text-align: justify;
+}
+
+.quiz-body .column{
+    padding: 1.75rem !important;
+}
+
+.build-panel{
+    padding: 40px;
+}
+
+.vid-container iframe{
+    border-radius: 15px;
+}
+
+.panel{
+    padding: 35px;
+}
+
+.differentials-box{
+    background-color: #141414;
+}
+
+.ion-icons{
+    background-color: white;
+}
+
+.differentials-box h5{
+    color: white !important;
+}
+
+.differentials-box p{
+    color: white !important;
+}
+
+
+
+
+/*OVERRIDES*/
+
+.hero-body{
+    background: #fafafa;
+}
+
+.hero.is-light .subtitle {
+    color: #4a4a4a;
+}
+
+/*.navbar-item img {
+    max-height: 60%;
+}*/
+
+footer ul{
+    margin: 0 !important;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+.footer-social-media li{
+    display: inline-block;
+}
+
+footer i{
+    font-size: 18px;
+}
+
+.navbar{
+    margin-bottom: 100px;
+}
+
+.title:not(.is-spaced)+.subtitle {
+    margin-top: -.75rem;
+}
+
+.table {
+    background-color: inherit;
+    margin-bottom: 20px;
+}
+
+.tabs.is-boxed li.is-active a {
+    background-color: #fafafa;
+    border-color: none !important;
+    /* border-bottom: 1px solid red; */
+    /* border-bottom-color: transparent!important; */
+}
+
+.tabs ul {
+    align-items: center;
+    border-bottom-color: #dbdbdb;
+    border-bottom-style: none !important;
+    border-bottom-width: 1px;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-start;
+}
+
+.tabs.is-boxed a {
+    border: none !important;
+    border-radius: 4px 4px 0 0;
+}
+
+.tabs li.is-active a {
+    border-bottom-color: #3273dc;
+    color: #3273dc;
+    font-weight: 700;
+}
+
+.card{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: inherit;
+    box-shadow: none;
+}
+
+.collapsable-header{
+    height: 80px;
+    padding: 25px;
+    background: #eef6fc;
+    cursor: pointer;
+    z-index: 9;
+    border-radius: 3px;
+}
+
+.collapsable-container{
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.collapsable-closed{
+    height: 80px;
+    margin-top: -80px;
+}
+
+.hide{
+    display: none;
+}
+
+.card figure img{
+    border-radius: 10px;
+}
+
+figure img{
+    border-radius: 10px;
+}
+
+.blog .card{
+    box-shadow: none;
+}
+
+.button{
+    /*box-shadow: 4px 4px 14px 0px rgba(80,125,237,0.5);*/
+}
+
+.button.is-danger{
+    /*background-color: #C7555A !important;*/
+}
+
+.box{
+    border-radius: 10px;
+}
+
+.box-post-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.home-cards .card{
+    background-color: inherit;
+    box-shadow: none;
+}
+
+.red-shadow{
+    box-shadow: 4px 4px 14px 0px rgba(218, 27, 27, 0.5);
+}
+
+.blue-shadow{
+    box-shadow: 4px 4px 14px 0px rgba(80,125,237,0.5);
+}
+
+.green-shadow{
+    box-shadow: 4px 4px 14px 0px rgba(4, 99, 39, 0.5);
+}
+
+.black-shadow{
+    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 760px) {
+    .wrapper-m{
+        max-width: 100% !important; 
+        margin-left: 0 !important;
+    }
+    .desktop-only{
+        display: none;
+    }
+  }

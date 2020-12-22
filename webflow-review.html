@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ACTNlab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="icon" type="image/png" href="img/Favicon.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/00acc72383.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper-m"> <!--WRAPPER-->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img src="img/MainLogo.svg">
+          </a>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+
+          </div>
+      
+          <div class="navbar-end">
+           <span class="navbar-item" id="homeLink"></span>
+           <span class="navbar-item" id="reviewsLink"></span>
+           <span class="navbar-item" id="abooutLink"></span>
+           <span class="navbar-item" id="buildLink"></span>
+           <span class="navbar-item" id="quizLink"></span>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="spacer"></div>
+
+    <div class="container">
+        <div class="columns is-vcentered" style="margin: 0;">
+            <div class="column"><h1 class="title is-1">Build with Webflow</h1><br /><h3 class="subtitle is-5" style="margin-top: -45px;">Subheadline que va a ser affiliate link</h3></div>
+            <div class="column is-offset-2">
+                <div class="tabs is-boxed is-centered main-menu" id="nav">
+                    <ul>
+                        <li class="is-active" data-target="pane-1" id="1" >
+                            <a>
+                                <span>Webflow 101</span>
+                            </a>
+                        </li>
+                        <li data-target="pane-2" id="2">
+                            <a>
+                                <span>Landing page</span>
+                            </a>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tab-content">
+
+        <div class="tab-pane is-active" id="pane-1" class="level">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-6">
+                            <h2 class="subtitle is-3">
+                                Beating the learning curve
+                            </h2>
+                            <p>Apart from being one the most versatile web building tools out there, Webflow is also known to have a steep learning curve, in this video you'll see that with the right approach, using Webflow becomes seamless.</p>
+                            <br>
+                            <div class="container">
+                              <a href="landing-wix.html"><button class="button is-link blue-shadow">Webflow 101</button></a>
+                            </div>
+                        </div>
+                        <div class="column is-5 is-offset-1">
+                            <figure class="image is-4by3">
+                                <img class="animate__animated animate__fadeIn" src="https://picsum.photos/800/600/?random" alt="Description">
+                            </figure>
+                            <br />
+                            <p class="has-text-centered">Tutorial: Building a landing page using WIX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+        <div class="tab-pane" id="pane-2" class="level">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-6">
+                            <h2 class="subtitle is-3">
+                                Building a landing page that converts 
+                            </h2>
+                            <p>In this video, you are going to learn the in and outs of a landing page that gets clients. We will be building the landing page for a creative studio.</p>
+                            <br>
+                            <div class="container">
+                              <button class="button is-link blue-shadow">Create a landing page</button>
+                            </div>
+                        </div>
+                        <div class="column is-5 is-offset-1">
+                            <video muted autoplay loop>
+                              <source src="gif/WebflowLanding.mp4" type="video/mp4">
+                            </video>
+                            <br />
+                            <p class="has-text-centered">Tutorial: Building a portfolio website using WIX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-body">
+      <div class="container">
+          <div class="panel notification differentials-box">
+            <h5 class="title is-5"><i class="fa fa-award"></i>&nbsp;Customization to the pixel</h5>
+            <p>Webflow offers you the gretest design flexibility and depth out of all the site builders. Create your very own unique designs withought any limitations.</p>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="small-spacer"></div>
+
+
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <h2 class="title is-3">
+                      Best use cases
+                    </h2>
+                    <h2 class="subtitle is-5">
+                        Webflow
+                    </h2>
+                    <br>
+                    <p class="use-case-icon"><span><ion-icon name="code-slash-outline"></ion-icon>&nbsp;</span>You are familiar with HTML and CSS rules</p>
+                    <p class="use-case-icon"><span><ion-icon name="cog-outline"></ion-icon>&nbsp;</span>You are looking for a highly customizable option</p>
+                    <p class="use-case-icon"><span><ion-icon name="color-palette-outline"></ion-icon>&nbsp;</span>Good design is the main differential for your website</p>
+                </div>
+                <div class="column">
+                  <span>Learning curve</span>
+                  <progress class="progress is-primary" value="70" max="100">15%</progress>
+                  <span>Customization</span>
+                  <progress class="progress is-link" value="100" max="100">30%</progress>
+                  <span>Scalability</span>
+                  <progress class="progress is-info" value="90" max="100">45%</progress>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+  </div> <!--WRAPPER CLOSE-->
+
+  <div class="container">
+    <h2 class="title is-2 has-text-centered">The process</h2>
+    <h3 class="subtitle is-4 has-text-centered">Creating with Webflow</h3>
+    <div class="columns" style="margin: 0;">
+        <div class="column" style="margin: 0;">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3" style="padding-top: 0;">
+                <video muted autoplay loop>
+                  <source src="gif/DraggingWebflow.mp4" type="video/mp4">
+                </video>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Drag and drop functionality</p>
+                </div>
+              </div>          
+            </div>
+          </div>
+        </div>
+          <div class="column" style="margin: 0;">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3" style="padding-top: 0;">
+                  <video muted autoplay loop>
+                    <source src="gif/editingMobile.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">In-depth design</p>
+                  </div>
+                </div>          
+              </div>
+            </div>
+          </div>
+          <div class="column" style="margin: 0;">
+            <div class="card">
+              <figure class="image is-4by3" style="padding-top: 0;">
+                <video muted autoplay loop>
+                  <source src="gif/EditingOverlay.mp4" type="video/mp4">
+                </video>
+              </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Full customization for every element</p>
+                  </div>
+                </div>          
+              </div>
+            </div>
+          </div>
+  </div>
+
+<div class="wrapper-m"> <!--WRAPPER-->
+
+  <div class="small-spacer"></div>
+
+  <div class="container">
+    <h2 class="title is-2 has-text-centered">Webflow Plans</h2>
+    <h5 class="subtitle is-5 has-text-centered">Starting at <span class="tag is-primary is-medium">$12.00</span></h5>
+  </div>
+
+  <div class="small-spacer"></div>
+
+  <div class="container">
+    <div class="columns is-vcentered" style="margin: 0;">
+      <div class="column" style="margin: 0;">
+        <div class="table-container">
+          <table class="table is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Plan</th>
+                  <th>Billed Monthly</th>
+                  <th>Billed Annualy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Basic</th>
+                  <td>$15.00</td>
+                  <td>$12.00/mo.</td>
+                </tr>
+                <tr>
+                  <th>CMS</th>
+                  <td>$20.00</td>
+                  <td>$16.00/mo.</td>
+                </tr>
+                <tr>
+                  <th>Business</th>
+                  <td>$45.00</td>
+                  <td>$36.00/mo.</td>
+                </tr>
+              </tbody>
+          </table>
+      </div>
+      <div class="has-text-centered">
+        <button class="button is-info blue-shadow">Get started with Webflow</button>
+      </div>
+      </div>
+      <div class="column" style="margin: 0;">
+        <h3 class="subtitle is-3">FAQs</h3>
+        <!----FAQ 1-->
+        <div id="collapsable1" class="collapsable-container">
+          <header class="collapsable-header">Can I use Webflow for free?</header>
+          <div id="collapsable1Body" class="panel collapsable-closed">
+            <div class="collapsable-body">
+              <p class="hide" id="faq1">Yes. However, your website will be referenced to a Webflow domain (e.g. yoursite.webflow.com), and when you are using it for free you have limited access to several features</p>
+            </div>
+          </div>
+        </div>
+        <!----FAQ 2-->
+        <div id="collapsable2" class="collapsable-container">
+          <header class="collapsable-header">Is Webflow hard?</header>
+          <div id="collapsable2Body" class="panel collapsable-closed">
+            <div class="collapsable-body">
+              <p class="hide" id="faq2">There IS a learning curve the first couple times you pick it up (watch: Webflow 101 video). It soon becomes easy and intuitive to use, offering a high degree of customization and depth. At the end of the day, very worth it.</p>
+            </div>
+          </div>
+        </div>
+        <!----FAQ 3-->
+        <div id="collapsable3" class="collapsable-container">
+          <header class="collapsable-header">What can you build with Webflow?</header>
+          <div id="collapsable3Body" class="panel collapsable-closed">
+            <div class="collapsable-body">
+              <p class="hide" id="faq3">You can build anything from simple landing pages, to multi-page websites, CMS and blogging websites, and online stores</p>
+            </div>
+          </div>
+        </div>
+        <!----FAQ 4-->
+        <div id="collapsable4" class="collapsable-container">
+          <header class="collapsable-header">Does Webflow need web hosting?</header>
+          <div id="collapsable4Body" class="panel collapsable-closed">
+            <div class="collapsable-body">
+              <p class="hide" id="faq4">No, the platform has its prebuilt hosting service.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div> <!--WRAPPER CLOSE-->
+
+
+    <!--AREA DE FOOTER-->
+
+    <footer class="footer">
+      <div class="container has-text-centered alinging-center">
+          <div class="small-spacer"></div>
+      </div>
+      <div class="container">
+          <div class="columns">
+              <div class="column is-1"></div>
+              <div class="column">
+                  <a class="" href="#">
+                    <img src="img/MainLogo.svg" width="150px" height="auto">
+                  </a>
+              </div>
+              <div class="column">
+                  <h2><strong>Site</strong></h2>
+                  <ul>
+                      <li><a href="#">Términos y condiciones</a></li>
+                      <li><a href="#">Politica de privacidad</a></li>
+                      <li><a href="#">Información legal</a></li>
+                  </ul>
+              </div>
+              <div class="column">
+                  <h2><strong>Tutorials</strong></h2>
+                  <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Información legal</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <h2><strong>Aknowledgements</strong></h2>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Información legal</a></li>
+                </ul>
+             </div>
+             <div class="column is-1"></div>
+          </div>
+          <div class="content has-text-centered">
+              <ul class="footer-social-media">
+                  <li>
+                      <a class="icon" href="https://github.com/dansup/bulma-templates">
+                          <i><ion-icon name="logo-instagram"></ion-icon></i>
+                      </a>
+                  </li>
+                <li>
+                    <a class="icon" href="">
+                    </a>
+                </li> 
+                  <li>
+                      <a class="icon" href="https://github.com/dansup/bulma-templates">
+                         <i><ion-icon name="logo-youtube"></ion-icon></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+</footer>
+
+
+
+    <script src="js/bulma.js"></script>
+    <script src="js/collapsable.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/navitems.js"></script>
+  </body>
+</html>
